@@ -1,0 +1,9 @@
+{
+  "ingest_id": "_id",
+  "station": "station",
+  "pm25": "pm25",
+  "pm10": "pm10",
+  "latitude": "latitude",
+  "longitude": "longitude",
+  "adresse": "adresse"
+}

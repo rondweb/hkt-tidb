@@ -1,0 +1,13 @@
+{
+  "station_id": "stationId",
+  "_id": "_id",
+  "address": "adresse",
+  "latitude": "latitude",
+  "longitude": "longitude",
+  "x": "X",
+  "y": "Y",
+  "pollutant": "polluant",
+  "value": "valeur",
+  "date": "date",
+  "hour": "heure"
+}

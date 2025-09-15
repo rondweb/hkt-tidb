@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  air_quality_sync:
+    build: .
+    env_file:
+      - .env
+    restart: unless-stopped
+    volumes:
+      - ./artifacts:/app/artifacts
+    # run in detached mode or use docker-compose up
+    command: python entrypoint.py
+    healthcheck:
+      test: ["CMD-SHELL", "test -f /app/artifacts/last_run_${TABLE}.json && [ $(expr $(date +%s) - $(stat -c %Y /app/artifacts/last_run_${TABLE}.json)) -lt 86400 ] || exit 1"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 5m

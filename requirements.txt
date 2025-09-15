@@ -1,0 +1,7 @@
+polars
+requests
+sqlalchemy
+mysql-connector-python
+apscheduler
+python-dotenv
+pymysql
