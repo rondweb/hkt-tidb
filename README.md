@@ -1,6 +1,7 @@
-# (removed leading markdown fence)
-# air_quality_sync
+Link for the Dashboard 
+https://lookerstudio.google.com/reporting/eb593073-155e-4af3-b6aa-14ba343b15c1/page/BeBYF
 
+# air_quality_sync 
   
   # Or, if you prefer mysql-connector:
   # TIDB=mysql+mysqlconnector://user:password@host:3306/dbname
@@ -116,3 +117,4 @@ Health and observability
 
 - The container writes `artifacts/last_run_<table>.json` after each successful run with a timestamp and rows counts. This file is used by the compose `healthcheck`.
 - Logs are written to stdout/stderr so they can be collected by your logging stack.
+
